@@ -8,6 +8,19 @@
     <title>Tracker Django Project</title>
 </head>
 <body>
+    <main>
+        <div>
+            <h1>Login</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button>Login</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+<body>
     <header>
         <nav>
             <ul>
@@ -35,18 +48,3 @@
     {% block content %}
     {% endblock content %}
 </body>
-
-<body>
-    <main>
-        <div>
-            <h1>Login</h1>
-            <form method="POST">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button>Login</button>
-            </form>
-        </div>
-    </main>
-</body>
-</html>
-
