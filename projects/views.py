@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from projects.models import Project
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
