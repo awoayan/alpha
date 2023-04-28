@@ -4,6 +4,7 @@ from projects.views import (
     show_project,
     create_project,
 )
+
 urlpatterns = [
     path("", list_projects, name="list_projects"),
     path("<int:id>/", show_project, name="show_project"),
